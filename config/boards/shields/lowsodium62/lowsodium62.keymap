@@ -23,45 +23,45 @@
 // | SHIFT |  Z   |  X   |  C   |  V   |  B   |              |  N   |  M    |  ,    |  .    |   /   | SHIFT |
 // | LCTRL | LGUI | LALT | GRAV |  EQL | DEL  | BSPC | | SPC | RET  | LBKT  |  RBKT | RCTRL | HOME  |   END |
                         bindings = <
-&kp ESC    &kp N1    &kp N2    &kp N3    &kp N4    &kp N5                      &kp N6    &kp N7      &kp N8    &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q     &kp W     &kp E     &kp R     &kp T                       &kp Y     &kp U       &kp I     &kp O     &kp P     &kp BSLH
-&kp LCTRL  &kp A     &kp S     &kp D     &lt TWO F &kp G                       &kp H     &lt THREE J &kp K     &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z     &kp X     &kp C     &kp V     &kp B                       &kp N     &kp M       &kp COMMA &kp DOT   &kp FSLH  &kp RSHFT
-&kp LCTRL  &kp LGUI  &kp LALT  &kp GRAVE &kp EQUAL &kp DEL &kp BSPC  &kp SPACE &kp RET   &kp LBKT    &kp RBKT  &kp RCTRL &kp HOME  &kp END
+&kp ESC    &kp N1    &kp N2    &kp N3    &kp N4    &kp N5                      &kp N6    &kp N7      &kp N8        &kp N9    &kp N0    &kp MINUS
+&kp TAB    &kp Q     &kp W     &kp E     &kp R     &kp T                       &kp Y     &kp U       &kp I         &kp O     &kp P     &kp BSLH
+&kp LCTRL  &kp A     &kp S     &kp D     &lt TWO F &kp G                       &kp H     &lt THREE J &kp K         &kp L     &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z     &kp X     &kp C     &kp V     &kp B                       &kp N     &kp M       &kp COMMA     &kp DOT   &kp FSLH  &kp RSHFT
+&kp LCTRL  &kp LGUI  &kp LALT  &kp GRAVE &kp EQUAL &kp DEL &kp BSPC  &kp SPACE &kp RET   &kp LBKT    &lt TWO RBKT  &kp RCTRL &kp HOME  &kp END
                                                                      
                         >;
                 };
 
                 TWO {
-// ---------------------------------------------------------------------------------------------------------
-// |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   -   |
-// |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   \   |
-// |  CTRL |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B   |                   |  N   |  M    |  ,    |  .   |   /   | SHIFT |
-// | LCTL  | LGUI  | LALT |  GRAV |  | EQL | DEL | BKSP|  | RET | SPC  | LBKT |  RBKT  | LBKT | HOME  |   END |
+// ----------------------------------------------------------------------------------------------------------
+// |  ESC  |  F1  |  F2  |  F3  |  F4  |  F5  |              |  F6  |  F7   |  F8   |  F9   |  F10  | PSCRN |
+// |  TAB  |  F11 |  F12 |      |      |      |              |      |       |  UP   |       |       | PG_UP |
+// | LCTRL |      |      |      |  *   |      |              |      | LEFT  |  DOWN | RIGHT |       | PG_DN |
+// | SHIFT |      |      |      |      |      |              |      |       |       |       |   UP  | SHIFT |
+// | LCTRL | LGUI | LALT |      |      |      |     |  |     |      |       |  *    | LEFT  |  DOWN | RIGHT |
                         bindings = <
-&kp F1  &kp F2 &kp F3 &kp F4 &kp F5 &kp F6                          &kp F7   &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &none    &none    &none    &none    &none                       &none   &none  &none  &none  &none  &none
-&trans &none     &none     &none     &trans    &none                     &none     &kp LEFT     &kp DOWN     &kp UP     &kp RIGHT  &none
-&trans &none     &none     &none     &none     &none                    &none     &none     &none  &none   &none  &none
-&trans &none  &none &none  &none  &kp F14     &kp F15                     &kp HOME  &kp END  &none    &none   &none  &none   &none
+&trans &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                  &kp F6  &kp F7   &kp F8   &kp F9    &kp F10  &kp PSCRN
+&trans &kp F11 &kp F12 &none   &none   &none                   &none   &none    &kb UP   &none     &none    &kp PG_UP
+&trans &none   &none   &none   &trans  &none                   &none   &kp LEFT &kp DOWN &kp RIGHT &none    &kp PG_DN
+&trans &none   &none   &none   &none   &none                   &none   &none    &none    &none     &kp UP   &trans
+&trans &trans  &trans  &none   &none   &none  &none   &kp HOME &kp END &none    &trans   &kp LEFT  &kp DOWN &kp RIGHT
                                                                       
                         >;
                 };
 
                 THREE {
-// ------------------------------------------------------------------------------------------------------------
-// |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   -   |
-// |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   \   |
-// |  CTRL |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B   |                   |  N   |  M    |  ,    |  .   |   /   | SHIFT |
-// | LCTL  | LGUI  | LALT |  GRAV |  | EQL | DEL | BKSP|  | RET | SPC  | LBKT |  RBKT  | LBKT | HOME  |   END |
+// -----------------------------------------------------------------------------------------------------------------------------
+// |         | C_BRI_DN | C_BRI_UP |          |          |      |              |      |       |       |       |       |        |
+// |         | C_MUTE   | C_VOL_DN | C_VOL_UP |          |      |              |      |       |       |       |       |        |
+// |         |          |          |          |          |      |              |      | *     |       |       |       |        |
+// |         |          |          |          |          |      |              |      |       |       |       |       |        |
+// | BT_SEL0 | BT_SEL 1 | BT_SEL 2 | BT_SEL 3 | BT_SEL 4 |      |     |  |     |      |       |       |       |       | BT_CLR |
                         bindings = <
-&kp C_MUTE   &kp C_VOL_DN    &kp C_VOL_UP    &none    &none    &none                       &none   &none  &none  &none  &none  &to GAME
-&none  &kp C_PREV     &kp C_PP   &kp C_NEXT     &none    &none                       &none   &none  &none  &none  &none  &none
-&none &none     &none     &none     &none    &none                     &none   &trans &none  &none  &none  &none
-&none &none     &none     &none     &none     &none                    &none   &none  &none  &none  &none  &none
-&bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3  &bt BT_SEL 4  &none &none         &none     &none   &none  &none  &none  &none  &bt BT_CLR
+&none        &kp C_BRI_DN  &kp C_BRI_UP  &none         &none         &none               &none  &none  &none  &none  &none  &none
+&none        &kp C_MUTE    &kp C_VOL_DN  &kp C_VOL_UP  &none         &none               &none  &none  &none  &none  &none  &none
+&none        &none         &none         &none         &none         &none               &none  &trans &none  &none  &none  &none
+&none        &none         &none         &none         &none         &none               &none  &none  &none  &none  &none  &none
+&bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none &none   &none &none  &none  &none  &none  &none  &bt BT_CLR
                                                                   
                         >;
                 };
